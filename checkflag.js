@@ -1,4 +1,4 @@
-export function checkFlag(user_feld, x, y) {
+export function checkFlag(user_feld, y, x) {
   if (user_feld[y][x] === "!FLAG!") {
     user_feld[y][x] = " ";
   } else {

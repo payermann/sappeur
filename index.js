@@ -4,8 +4,8 @@ import { question } from "readline-sync";
 import { checkFlag } from "./checkflag.js";
 import { checkWin } from "./checkwin.js";
 
-const mines_number = 5;
-const size = 5;
+const mines_number = 2;
+const size = 3;
 const not_for_user = false;
 const for_user = true;
 
@@ -47,5 +47,6 @@ while (true) {
   if (checkWin(user_feld, feld)) {
     console.log("You win");
     console.table(feld);
+    break;
   }
 }
